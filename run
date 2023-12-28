@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# bash script that takes a string argument and runs it with docker compose.
+# Example: ./run "flake8" -> docker compose run --rm app sh -c "flake8"
+
+docker compose run --rm app sh -c "$1"
